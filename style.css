@@ -1,0 +1,16 @@
+body{
+    margin: 0;
+    background-color: lightcyan;
+}
+#formulario1{
+    background-color: linen;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.rojo{
+color: red;
+}
+.borde-rojo{
+    border: red,2px;
+}
