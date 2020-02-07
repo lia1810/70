@@ -1,223 +1,225 @@
-// const playlist = ["Concrete and Gold", "The Line", "Sunday Rain", "Happy Ever After (Zero Hour)", "Arrows", "Dirty Water", "La Dee Da", "The Sky Is a Neighborhood", "Make It Right", "Run", "T-Shirt"];
-// playlist.forEach(canciones => {
-//     console.log(canciones)
-// });
-// const librosDeJS = [
-//     'JavaScript for Kids: A Playful Introduction to Programming',
-//     'Composing Software',
-//     'Eloquent JavaScript: A Modern Introduction to Programming',
-//     'JavaScript: The Good Parts',
-//     'Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries',
-//     'Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript',
-//     'JavaScript: The Definitive Guide',
-//     'You Don’t Know JS',
-//     'JavaScript Allongé: The Six Edition'
-// ];
-// let totalLibros = ``
-// librosDeJS.forEach(libros => {
-//    totalLibros ++
+//forEach-1
 
-// });
-// console.log('Mi lista de libros de JavaScript tiene ' + totalLibros + ' libros')
+const playlist = ["Concrete and Gold", "The Line", "Sunday Rain", "Happy Ever After (Zero Hour)", "Arrows", "Dirty Water", "La Dee Da", "The Sky Is a Neighborhood", "Make It Right", "Run", "T-Shirt"];
+playlist.forEach(canciones => {
+  console.log(canciones)
+});
 
+//forEach-2
 
-// const numbers = [6, 1, 34, 94, 3, 17];
-// let sum = 0;
-// numbers.forEach(numero => {
-//     sum += numero
-// });
-// console.log(sum)
+const librosDeJS = [
+  'JavaScript for Kids: A Playful Introduction to Programming',
+  'Composing Software',
+  'Eloquent JavaScript: A Modern Introduction to Programming',
+  'JavaScript: The Good Parts',
+  'Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries',
+  'Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript',
+  'JavaScript: The Definitive Guide',
+  'You Don’t Know JS',
+  'JavaScript Allongé: The Six Edition'
+];
+let totalLibros = ``
+librosDeJS.forEach(libros => {
+  totalLibros++
 
+});
+console.log('Mi lista de libros de JavaScript tiene ' + totalLibros + ' libros')
 
-// let temas = ``
-// const playlist = ["Concrete and Gold", "The Line", "Sunday Rain", "Happy Ever After (Zero Hour)", "Arrows", "Dirty Water", "La Dee Da", "The Sky Is a Neighborhood", "Make It Right", "Run", "T-Shirt"];
-// playlist.forEach((canciones,indice) => {
-//     temas += `- ${indice} - ${canciones}
-//     `
-// });
-// console.log(temas)
+//forEach-3
+let temas = ``
+const playlist = ["Concrete and Gold", "The Line", "Sunday Rain", "Happy Ever After (Zero Hour)", "Arrows", "Dirty Water", "La Dee Da", "The Sky Is a Neighborhood", "Make It Right", "Run", "T-Shirt"];
+playlist.forEach((canciones, indice) => {
+  temas += `- ${indice} - ${canciones}
+    `
+});
+console.log(temas)
 
 
-// const notasDeTPs = [4, 7, 8, 5, 10];
-// let notaFinal = 0;
-// const notaFinalpromedio = notasDeTPs.forEach((nota) => {
-//   notaFinal += nota
+//forEach-4
 
-// });
+const numbers = [6, 1, 34, 94, 3, 17];
+let sum = 0;
+numbers.forEach(numero => {
+  sum += numero
+});
+console.log(sum)
 
-// notaFinal = notaFinal / notasDeTPs.length
-// console.log(notaFinal);
+// forEach-5
+const notasDeTPs = [4, 7, 8, 5, 10];
+let notaFinal = 0;
+const notaFinalpromedio = notasDeTPs.forEach((nota) => {
+  notaFinal += nota
 
+});
 
-// const masNumeros = [43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32];
-// const numerosPares = [];
-// const numerosImpares = [];
-// const seleccionPares = masNumeros.forEach((numero) =>{ if (numero % 2 === 0){numerosPares.push(numero)}
-// else{numerosImpares.push(numero)}
-// }
-// )
+notaFinal = notaFinal / notasDeTPs.length
+console.log(notaFinal);
 
-// console.log(numerosPares)
-// console.log(numerosImpares)
+//forEach-6
+const masNumeros = [43, 11, 18, 46, 44, 37, 42, 29, 9, 3, 37, 0, 40, 10, 38, 34, 25, 40, 4, 32];
+const numerosPares = [];
+const numerosImpares = [];
+const seleccionPares = masNumeros.forEach((numero) => {
+  if (numero % 2 === 0) {
+    numerosPares.push(numero)
+  } else {
+    numerosImpares.push(numero)
+  }
+})
 
+console.log(numerosPares)
+console.log(numerosImpares)
 
-// const valores = [ 6, 0, 5, 2, 3, 8, 7, 4, 1, 9 ];
-// let dobles = [];
-// const valorDuplicado = valores.forEach(valor => dobles.push(valor * 2)
-// );
-// console.log(valores);
-// console.log(dobles);
-// const numeros = [1, 2, 3, 4, 5];
-// console.log(numeros)
-// const numerosMasDiez = numeros.map((numero) => numero + 10);
-// console.log(numerosMasDiez)
+//forEach-7
 
-
-// const numeros = [3, 7, 13, 99];
-// const dobles = numeros.map((numero) => numero * 2)
-// console.log(numeros);
-// console.log(dobles);
-
-
-// const frases = ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.'];
-// const frasesExclamadas = frases.map((frase) => `${frase}!`)
-// console.log(frases);
-// console.log(frasesExclamadas);
+const valores = [6, 0, 5, 2, 3, 8, 7, 4, 1, 9];
+let dobles = [];
+const valorDuplicado = valores.forEach(valor => dobles.push(valor * 2));
+console.log(valores);
+console.log(dobles);
 
 
-// const librosDeJS = [
-//   'JavaScript for Kids: A Playful Introduction to Programming',
-//   'Composing Software',
-//   'Eloquent JavaScript: A Modern Introduction to Programming',
-//   'JavaScript: The Good Parts',
-//   'Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries',
-//   'Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript',
-//   'JavaScript: The Definitive Guide',
-//   'You Don’t Know JS',
-//   'JavaScript Allongé: The Six Edition'
-// ];
-// const librosEnlista = librosDeJS.map((libro) => `<li> ${libro} </li>
-//   `)
-// console.log(`<ul>${librosEnlista}<ul>`)
+//map-1
+const numeros = [1, 2, 3, 4, 5];
+console.log(numeros)
+const numerosMasDiez = numeros.map((numero) => numero + 10);
+console.log(numerosMasDiez)
 
-// let playlist = ['Everlong', 'The Pretender', 'Learn to Fly'];
-// const cancionesConIndice = playlist.map((numero, i) => numero =  `${i} - ${numero}`
-// )
-// console.log(cancionesConIndice)
+//map-2
+const numeros = [3, 7, 13, 99];
+const dobles = numeros.map((numero) => numero * 2)
+console.log(numeros);
+console.log(dobles);
 
+//map-3
 
-//EJERCICIO 7
+const frases = ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.'];
+const frasesExclamadas = frases.map((frase) => `${frase}!`)
+console.log(frases);
+console.log(frasesExclamadas);
 
-// const costos = [ 12.5, 56, 98, 45.75 ];
-
-// const agregarIVA = function (costo) {
-//   return costo * 1.21;
-// }
-
-// const sumarGanancia = function (costo) {
-//   return costo * 1.5;
-// }
-
-// // codear acá la solución del ejercicio
-
-
-// console.log(preciosFinales);
-// // deberia mostrar
-// // [ 22.6875, 101.64, 177.87, 83.03625 ]
-
-// //EJERCICIO 8
-
-// const productos = [ 'celular', 'notebook', 'monitor' ];
-// const costos = [ 12.5, 56, 98 ];
-
-// const agregarIVA = function (costo) {
-//   return costo * 1.21;
-// }
-
-// const sumarGanancia = function (costo) {
-//   return costo * 1.5;
-// }
-
-// // codear acá la solución del ejercicio
+//map-4
+const librosDeJS = [
+  'JavaScript for Kids: A Playful Introduction to Programming',
+  'Composing Software',
+  'Eloquent JavaScript: A Modern Introduction to Programming',
+  'JavaScript: The Good Parts',
+  'Programming JavaScript Applications: Robust Web Architecture with Node, HTML5, and Moderns JS Libraries',
+  'Effective JavaScript: 68 Specific Ways to Harness the Power of JavaScript',
+  'JavaScript: The Definitive Guide',
+  'You Don’t Know JS',
+  'JavaScript Allongé: The Six Edition'
+];
+const librosEnlista = librosDeJS.map((libro) => `<li> ${libro} </li>
+  `)
+console.log(`<ul>${librosEnlista}<ul>`)
 
 
-// console.log(preciosFinales);
-// // deberia mostrar
-// // [ "celular 22.6875", "notebook 101.64", "monitor 177.87" ]
+//map-5
+
+const frases = ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.'];
+
+// codear acá la solución del ejercicio
 
 
-// const numbers = [6, 1, 34, 94, 3, 17];
+console.log(frases); // ['Labore sea dolor.', 'Justo rebum dolor.', 'Stet lorem amet.']
+console.log(longitudes); // [ 17, 18, 16 ]
 
-// const suma = numbers.reduce((acumuladora, numero) =>{
-//   return acumuladora + numero
-// })
-// console.log(suma)
-// // deberia mostrar 155
+//map-6
 
-// const numbers = [6, 1, 34, 94, 3, 17];
-// const producto = numbers.reduce((acc, curr)=>{
-// return acc * curr
-// })
-// console.log(producto)
-// // codea debajo de este comentario la solucion al ejercicio
+let playlist = ['Everlong', 'The Pretender', 'Learn to Fly'];
+const cancionesConIndice = playlist.map((numero, i) => numero = `${i} - ${numero}`)
+console.log(cancionesConIndice)
+
+
+
+// map- 7
+
+const costos = [12.5, 56, 98, 45.75];
+const preciosFinales = costos.map((numero) => numero * 1.5).map((numero) => numero * 1.21);
+console.log(preciosFinales);
+
+
+// //map-8 
+
+const productos = ['celular', 'notebook', 'monitor'];
+const costos = [12.5, 56, 98];
+
+const preciosFinales = costos.map((numero, i) => numero * 1.5).map((numero, i) => numero * 1.21);
+console.log(preciosFinales)
+
+const productosConPrecios = productos.map((producto, i) => producto + " " + preciosFinales[i])
+console.log(productosConPrecios);
+
+// deberia mostrar
+// [ "celular 22.6875", "notebook 101.64", "monitor 177.87" ]
+
+
+//filter
+const positivos = datos.filter((numero) => numero > 0)
+const valorDuplicado = positivos.forEach(numero => {
+  numero * 2
+});
+console.log(valorDuplicado)
+console.log(positivos)
+
+
+//reduce-1
+
+const numbers = [6, 1, 34, 94, 3, 17];
+
+const suma = numbers.reduce((acumuladora, numero) => {
+  return acumuladora + numero
+})
+console.log(suma)
+// deberia mostrar 155
+
+//reduce-2
+
+const numbers = [6, 1, 34, 94, 3, 17];
+const producto = numbers.reduce((acc, curr) => {
+  return acc * curr
+})
+console.log(producto)
 
 // // deberia mostrar 977976
-// const notasDeTPs = [4, 7, 8, 5, 10];
-// const promedio = notasDeTPs.reduce((acc, curr) =>{
-// return acc + curr
-// },0)
-// console.log(promedio/ 5)
-// // codea debajo de este comentario la solucion al ejercicio
+
+//reduce-3
+
+const notasDeTPs = [4, 7, 8, 5, 10];
+const promedio = notasDeTPs.reduce((acc, curr) => {
+  return acc + curr
+}, 0)
+console.log(promedio / 5)
 
 // deberia mostrar 6.8
-const personas = [
-  {nombre: "Grace", 
-  edad: 6
-  }, 
-  {nombre: "Ada", 
-  edad: 19
+
+
+//reduce-5
+const personas = [{
+    nombre: "Grace",
+    edad: 6
   },
-  {nombre: "Hedy", 
-  edad: 34
+  {
+    nombre: "Ada",
+    edad: 19
+  },
+  {
+    nombre: "Hedy",
+    edad: 34
   }
 ];
-
-const sumaDeEdades = personas.reduce((acc,val) =>{
-return acc + val.edad;
+const sumaDeEdades = personas.reduce((acc, val) => {
+  return acc + val.edad;
 }, 0)
 console.log(sumaDeEdades)
-// // codea debajo de este comentario la solucion al ejercicio
 
 // // deberia mostrar 59
-// const datos = [2, -4, 6, 0, 5, -1];
-// const positivos = datos.filter((numero) => numero > 0)
-// const valorDuplicado = positivos.forEach(numero => {
-//   numero*2
-// });
-// console.log(valorDuplicado)
-// console.log(positivos)
-// // codear acá la solución del ejercicio
-// const total = 
-// const dobles = numeros.map((numero) => numero * 2)
 
+//integrados
 
-
-//Nil
-// const total = datos.reduce((acc,curr)=> {
-//   if(curr >= 0){
-//      return acc + curr* 2  
-//   }
-//   else{
-//       return acc
-//   }
-// }, 0)
-// console.log(total)
-//Noe
-// const datos = [2, -4, 6, 0, 5, -1];
-
-// const total = datos.filter(el => el > 0).reduce((acumuladora, valorActual) => {
-//     return acumuladora + valorActual * 2;
-// }, 0)
-
-// console.log(total);
-
+const datos = [2, -4, 6, 0, 5, -1];
+const resultadoFinal = datos.filter((numero) => numero >= 0)
+  .map((numero) => numero * 2)
+  .reduce((acc, val) => acc + val)
+console.log(resultadoFinal)
